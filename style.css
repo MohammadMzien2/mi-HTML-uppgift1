@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.section-1{
+.section-1 {
     width: 100%;
     height: 100vh;
     background-image: url(img/nathon.jpg);
@@ -18,18 +18,19 @@ header {
 
 nav {
     box-sizing: content-box;
-    background: rgba(128, 128, 128, 0.348);
+    background: rgba(128, 128, 128, 0.237);
     padding: 14px;
 }
 
 nav a {
-font-size: 16px;
-text-decoration: none;
-color: #eee;
-font-family: sans-serif;
-border-bottom: 1px solid transparent;
-transition: 0.8s;
-padding: 8px 15px;}
+    font-size: 16px;
+    text-decoration: none;
+    color: #eee;
+    font-family: sans-serif;
+    border-bottom: 1px solid transparent;
+    transition: 0.8s;
+    padding: 8px 15px;
+}
 
 nav a:hover {
     color: rgba(191, 146, 91)
@@ -39,49 +40,107 @@ nav a:hover {
     font-size: 30px;
     font-weight: bold;
 }
-#re{
+
+#re {
     font-weight: bold;
     display: flex;
     flex-wrap: wrap-reverse;
     float: right;
 }
-#center{
+
+.container {
     right: 150px;
     position: absolute;
     margin: 50px 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
 }
-.yellow{
+
+h2 {
     color: rgba(191, 146, 91);
     font-size: 16px;
-    font-weight: bold;
-    
 }
-.text{
+
+p {
     font-size: 35px;
-    color: white;
-    font-weight: bold;
-}
-.text2{
-
 }
 
+span {
+    font-size: 35px
+}
 
-.text3{
-    font-weight: bold;
-    color: white;
+.text3 {
     font-size: 18px;
 }
-.button{
+
+.container2 {
+    margin-right: 30vw;
+}
+
+.button {
     color: rgba(191, 146, 91);
     font-size: 20px;
-    transition: 0.8s;
-    font-weight: bold;
-    cursor: pointer;
+    transition:  color 0.8s;
+    cursor: pointer; 
     text-decoration: none;
-    border: 2px rgb(176, 205, 11);
+    border: 2px solid;
+    display: inline-block;
+    padding: 4px 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
 }
-.button:hover{
-    color:white;
+
+.button:hover {
+    color: white;
 }
+
+.card{
+   display: flex;
+   text-align: center;
+   width: auto;
+   justify-content: center;
+}
+.card .card1{
+ background-color:rgba(191, 146, 91); 
+margin-bottom: 40px;
+width: auto;
+padding: 40px;
+line-height: 29px; 
+color: white;
+position: relative;
+}
+.card .card2{
+    background-color:rgb(184, 121, 43); 
+   margin-bottom: 40px;
+   width: auto;
+   padding: 40px;
+   line-height: 29px; 
+   color: white;
+   position: relative;
+   }
+ 
+ .card h3{
+ font-size: 26px;
+ margin-top: 50px;
+ margin-bottom: 20px;
+ }
+ .card p{
+    font-size: 18px;
+    font-weight: bold;
+ }
+ 
+ .profile-img{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    position:absolute;
+    top: -30%;
+    transform: translateX(-50%);
+    z-index: 999;
+    padding: 2px;
+ } 
 
 
