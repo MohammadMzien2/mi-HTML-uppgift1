@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 .section-1 {
     width: 100%;
     height: 100vh;
@@ -10,18 +9,15 @@
     background-position: center;
     background-size: cover;
 }
-
 header {
     top: 12vh;
     height: 12vh;
 }
-
 nav {
     box-sizing: content-box;
     background: rgba(128, 128, 128, 0.237);
     padding: 14px;
 }
-
 nav a {
     font-size: 16px;
     text-decoration: none;
@@ -31,23 +27,19 @@ nav a {
     transition: 0.8s;
     padding: 8px 15px;
 }
-
 nav a:hover {
     color: rgba(191, 146, 91)
 }
-
 .barber {
     font-size: 30px;
     font-weight: bold;
 }
-
 #re {
     font-weight: bold;
     display: flex;
     flex-wrap: wrap-reverse;
     float: right;
 }
-
 .container {
     right: 150px;
     position: absolute;
@@ -56,47 +48,36 @@ nav a:hover {
     font-weight: bold;
     color: white;
 }
-
-h2 {
+.h2 {
     color: rgba(191, 146, 91);
     font-size: 16px;
 }
-
 p {
     font-size: 35px;
 }
-
 span {
     font-size: 35px
 }
-
 .text3 {
     font-size: 18px;
 }
-
 .container2 {
-    margin-right: 30vw;
+    margin: 0px 60px;
 }
-
 .button {
     color: rgba(191, 146, 91);
     font-size: 20px;
-    transition:  color 0.8s;
-    cursor: pointer; 
+    transition:   0.8s;
+    cursor: pointer;
     text-decoration: none;
     border: 2px solid;
     display: inline-block;
     padding: 4px 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-    overflow: hidden;
+margin: 14px 0px;
 }
-
 .button:hover {
     color: white;
 }
-
 .card{
    display: flex;
    text-align: center;
@@ -104,7 +85,7 @@ span {
    justify-content: center;
 }
 .card .card1{
- background-color:rgba(191, 146, 91); 
+ background-color:rgba(1191, 146, 9); 
 margin-bottom: 40px;
 width: auto;
 padding: 40px;
@@ -121,7 +102,6 @@ position: relative;
    color: white;
    position: relative;
    }
- 
  .card h3{
  font-size: 26px;
  margin-top: 50px;
@@ -142,5 +122,85 @@ position: relative;
     z-index: 999;
     padding: 2px;
  } 
+ .jason{
+    width: 40%;
+    margin: -40px 210px;
+ }
 
+.color{
+    color:
+    rgb(184, 121, 43);
+    font-size: 18px;
+    font-family:
+    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 28px;
+    font-weight: bold;
+}
+.center{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgba(28, 28, 28, 0.881);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.for{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(61, 61, 61, 0.74);
+    line-height: 29px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.right{
+   border: 5px solid rgb(185, 126, 55);
+   background-color: rgb(179, 125, 60);
+   width: 20%;
+   margin: 840px 900px ;
+   color: white;
+}
+.right p{
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0px 99px;
+}
+.hadi{
+    margin-top: -80px;
+    width: 230px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+.abdul{
+    margin: -800px 900px;
+    width: 30%;
+ }
+.calendar{
+    width: 80px;
+    height: 80px;
+}
+.ahmad{
+    background-color: rgb(254, 239, 218);
+}
+.ahmad1{
+    color: rgba(191, 146, 91);
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+.ahmad2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 33px;
+    text-align: center;
+}
 
+.people{
+    border:4px solid white;
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    font-size: 30px;
+    display: flex;
+}
+.style{
+    width: 4%;
+    height: 4%;
+    border-radius: 50px;
+}
