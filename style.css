@@ -2,17 +2,15 @@
     margin: 0;
     padding: 0;
 }
-.section-1 {
+.header{
     width: 100%;
     height: 100vh;
     background-image: url(img/nathon.jpg);
     background-position: center;
     background-size: cover;
 }
-header {
-    top: 12vh;
-    height: 12vh;
-}
+
+
 nav {
     box-sizing: content-box;
     background: rgba(128, 128, 128, 0.237);
@@ -34,7 +32,7 @@ nav a:hover {
     font-size: 30px;
     font-weight: bold;
 }
-#re {
+.re {
     font-weight: bold;
     display: flex;
     flex-wrap: wrap-reverse;
@@ -167,7 +165,7 @@ margin: 14px 0px;
 }
 .hadi{
     margin-top: -80px;
-    width: 230px;
+    width: 75%;
     font-size: 35px;
     display: flex;
     justify-content: center;
@@ -175,20 +173,57 @@ margin: 14px 0px;
 
 .calendar{
     width: 80px;
-}
-.ahmad{
-    background: rgb(254, 239, 218);
-}
-.ahmad h4{
-    color: rgba(191, 146, 91);
-    font-weight: bold;
-    text-align: center;
-    font-size: 16px;
-}
-.ahmad2{
-    font-family:
-    'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 33px;
-    text-align: center;
-}
+    }
 
+    .testiomial{
+        background-color: rgb(235 232 222);
+        margin-top: 100vh;
+        font-weight: bold;
+    }
+    .testiomial h4{
+        text-align: center;
+        color: rgba(191, 146, 91);
+    }
+    .ahmad2{
+         text-align: center;
+    }
+    .abd{
+        border-radius: 10px;
+        background: white;
+        padding: 25px;
+        display: flex;
+        box-shadow:1px 1px black;
+        width: 24%;
+}
+.row{
+    display: flex;
+    margin: 4em 1em; 
+    justify-content: space-evenly;
+    }
+    .abd .style{
+        width: 110px;
+        height: 90px;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-right: 30px;
+    }
+    .abd p{
+        padding: 21px;
+        font-size: 23px;
+        color: rgba(0, 0, 0, 0.616);
+        }
+        .abd h3 {
+            font-size: 22px;
+            margin-top: -60px;
+            margin-left: 132px;
+       }
+        .abd h4{
+            margin-top: 10px;
+        }
+       .abd .cittat{
+        width: 100px;
+        height: 70px;
+        border-radius: 50%;
+color: rgba(191, 146, 91);  
+     }
+    
