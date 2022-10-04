@@ -6,36 +6,34 @@
     width: 100%;
     height: 100vh;
     background-image: url(img/nathon.jpg);
-    background-position: center;
     background-size: cover;
 }
 
 
-nav {
+.header nav {
     box-sizing: content-box;
     background: rgba(128, 128, 128, 0.237);
     padding: 14px;
 }
-nav a {
+.header nav a {
     font-size: 16px;
     text-decoration: none;
     color: #eee;
     font-family: sans-serif;
-    border-bottom: 1px solid transparent;
     transition: 0.8s;
     padding: 8px 15px;
 }
-nav a:hover {
+.header nav a:hover {
     color: rgba(191, 146, 91)
 }
-.barber {
+.header .barber {
     font-size: 30px;
-    font-weight: bold;
+font-weight: bold;
+
 }
-.re {
+.header .re {
     font-weight: bold;
     display: flex;
-    flex-wrap: wrap-reverse;
     float: right;
 }
 
@@ -43,28 +41,32 @@ nav a:hover {
 .container {
     right: 150px;
     position: absolute;
-    margin: 50px 10px;
+    margin: 50px -60px;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
 }
-.h2 {
+.container .h2 {
     color: rgba(191, 146, 91);
     font-size: 16px;
 }
-p {
+.container p {
     font-size: 35px;
 }
-span {
-    font-size: 35px
-}
-.text3 {
-    font-size: 18px;
-}
+.container span {
+    font-size: 35px;
+    color: #ffffff60;
+     
+      
+    }
+
 .container2 {
     margin: 0px 60px;
 }
-.button {
+.container2 p {
+    font-size: 18px;
+}
+.container2 a {
     color: rgba(191, 146, 91);
     font-size: 20px;
     transition:   0.8s;
@@ -75,14 +77,13 @@ span {
     padding: 4px 10px;
 margin: 14px 0px;
 }
-.button:hover {
+.container2 a:hover {
     color: white;
 }
 .card{
    display: flex;
    text-align: center;
-   width: auto;
-   justify-content: center;
+   
 }
 .card .card1{
  background-color: rgba(1191, 146, 9);
@@ -94,13 +95,14 @@ margin: 14px 0px;
  position: relative;
 }
 .card .card2{
-    background-color:rgb(184, 121, 43); 
-   margin-bottom: 40px;
-   width: auto;
-   padding: 40px;
-   line-height: 29px; 
-   color: white;
-   position: relative;
+    background-color:
+    rgb(184, 121, 43);
+    margin-bottom: 40px;
+    width: auto;
+    padding: 40px;
+    line-height: 29px;
+    color: white;
+    position: relative;
    }
  .card h3{
  font-size: 26px;
@@ -112,7 +114,7 @@ margin: 14px 0px;
     font-weight: bold;
  }
  
- .profile-img{
+ .card img{
     width: 160px;
     height: 160px;
     border-radius: 80px;
@@ -122,11 +124,12 @@ margin: 14px 0px;
     z-index: 999;
     padding: 2px;
  } 
- .jason{
+  .jason{
     width: 40%;
+    
  }
 
-.color{
+ .container3 .color{
     color:
     rgb(184, 121, 43);
     font-size: 18px;
@@ -135,35 +138,35 @@ margin: 14px 0px;
     line-height: 28px;
     font-weight: bold;
 }
-.center{
+.container3 .center{
     font-size: 35px;
     font-weight: bold;
     color: rgba(28, 28, 28, 0.881);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.for{
+.container3 .for{
     font-size: 16px;
     font-weight: bold;
     color: rgba(61, 61, 61, 0.74);
     line-height: 29px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.right{
+.container3 .right{
    border: 5px solid rgb(185, 126, 55);
    background-color: rgb(179, 125, 60);
    width: 35%;
    color: white;
 }
-.right p{
+.container3 .right p{
     font-weight: bold;
     font-size: 15px;
     margin: 0px 99px;
 }
-.abdul{
+.container3 .abdul{
     margin-top: -54em;
     margin-left: 40em;
 }
-.hadi{
+.container3 .hadi{
     margin-top: -80px;
     width: 75%;
     font-size: 35px;
@@ -171,13 +174,13 @@ margin: 14px 0px;
     justify-content: center;
 }
 
-.calendar{
+.container3 .calendar{
     width: 80px;
     }
 
     .testiomial{
         background-color: rgb(235 232 222);
-        margin-top: 100vh;
+        margin-top: 69vh;
         font-weight: bold;
     }
     .testiomial h4{
@@ -186,6 +189,7 @@ margin: 14px 0px;
     }
     .ahmad2{
          text-align: center;
+         font-size: 30px;
     }
     .abd{
         border-radius: 10px;
@@ -200,6 +204,7 @@ margin: 14px 0px;
     margin: 4em 1em; 
     justify-content: space-evenly;
     }
+ 
     .abd .style{
         width: 110px;
         height: 90px;
@@ -221,9 +226,13 @@ margin: 14px 0px;
             margin-top: 10px;
         }
        .abd .cittat{
-        width: 100px;
-        height: 70px;
+        width: 70px;
+        height: 60px;
         border-radius: 50%;
-color: rgba(191, 146, 91);  
-     }
+        margin-top: -100px;
+        z-index: 999;
+        padding: 8px;
+     } 
+    
+
     
