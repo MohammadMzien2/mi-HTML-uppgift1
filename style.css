@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .header{
     width: 100%;
@@ -39,9 +40,9 @@ font-weight: bold;
 
 
 .container {
-    right: 150px;
+    right: 190px;
     position: absolute;
-    margin: 50px -60px;
+    margin: 51px -140px;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
@@ -51,20 +52,26 @@ font-weight: bold;
     font-size: 16px;
 }
 .container p {
-    font-size: 35px;
+    font-size: 45px;
 }
 .container span {
-    font-size: 35px;
-    color: #ffffff60;
-     
-      
+    -webkit-text-stroke: 1px white;
+    color: transparent;
     }
-
 .container2 {
     margin: 0px 60px;
 }
 .container2 p {
     font-size: 18px;
+    line-height: 32px;
+}
+.verticle-line{
+    height: 186px;
+    border-left: 3px solid rgba(191, 146, 91);
+    position: absolute;
+    left: 18px;
+    margin-left: -5px;
+    margin-top: -5px;
 }
 .container2 a {
     color: rgba(191, 146, 91);
@@ -83,7 +90,6 @@ margin: 14px 0px;
 .card{
    display: flex;
    text-align: center;
-   
 }
 .card .card1{
  background-color: rgba(1191, 146, 9);
@@ -126,6 +132,8 @@ margin: 14px 0px;
  } 
   .jason{
     width: 40%;
+    background-size: cover;
+    background-attachment: fixed;
     
  }
 
@@ -149,7 +157,8 @@ margin: 14px 0px;
     font-weight: bold;
     color: rgba(61, 61, 61, 0.74);
     line-height: 29px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:
+    'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .container3 .right{
    border: 5px solid rgb(185, 126, 55);
@@ -180,8 +189,9 @@ margin: 14px 0px;
 
     .testiomial{
         background-color: rgb(235 232 222);
-        margin-top: 69vh;
         font-weight: bold;
+        margin-top: 69vh;
+
     }
     .testiomial h4{
         text-align: center;
@@ -192,25 +202,30 @@ margin: 14px 0px;
          font-size: 30px;
     }
     .abd{
-        border-radius: 10px;
+        border-radius: 3px;
         background: white;
-        padding: 25px;
-        display: flex;
+        padding: 15px;
+        display: flex; 
         box-shadow:1px 1px black;
-        width: 24%;
+        width: 28%;
 }
 .row{
     display: flex;
-    margin: 4em 1em; 
     justify-content: space-evenly;
     }
  
     .abd .style{
-        width: 110px;
+        width: 100px;
         height: 90px;
         border-radius: 50%;
-        margin-left: 5px;
-        margin-right: 30px;
+        
+    }
+    .abd ul i{
+        color: rgba(191, 146, 91);
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+        
     }
     .abd p{
         padding: 21px;
@@ -219,11 +234,12 @@ margin: 14px 0px;
         }
         .abd h3 {
             font-size: 22px;
-            margin-top: -60px;
-            margin-left: 132px;
+            
+            margin: -60px 0px 0px 110px;
        }
         .abd h4{
             margin-top: 10px;
+            
         }
        .abd .cittat{
         width: 70px;
@@ -233,6 +249,98 @@ margin: 14px 0px;
         z-index: 999;
         padding: 8px;
      } 
-    
+   
+    footer{
+        position: relative;
+        width: auto;
+        height: auto;
+        background: rgb(20, 27, 37);
+    }
+footer .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin: 0 55px;
+}
 
-    
+
+footer .footer  h2{
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 18px;
+    margin-top: 45px;
+}
+
+footer .footer h2::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -0px;
+    width: 50px;
+    height: 2px;
+}
+
+footer .footer .div p{
+    color: rgba(255, 255, 255, 0.227);
+}
+.sci{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 20px;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+     display: inline-block;
+     width: 45px;
+     height: 45px;
+     text-align:
+     center;
+     justify-content:center;
+     color: white;
+     text-decoration: none;
+     border-radius: 50px;
+     background-color: rgba(191, 146, 91);
+}
+
+    .links{
+        position: relative;
+    }
+
+    .links li{
+        list-style: none;   
+        line-height: 20px;
+    }
+    .links li a{
+        color: white;
+        text-decoration: none;
+        margin-bottom: 18px;
+        display: inline-block;
+    }
+    .links li a:hover{
+        color: rgba(191, 146, 91);
+    }
+    .have{
+        position: relative;
+    }
+    .have li{
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        margin-bottom: 16px;
+    }
+    .have li span:nth-child(1)
+    {color: rgba(191, 146, 91);font-size: 20px;}
+    .have li span{
+            color: white;
+    }
+    .have a{
+        color: white;
+        text-decoration: none;
+    }
+    .have a:hover{
+        color: rgba(191, 146, 91);
+    }
+   
