@@ -17,8 +17,8 @@
     background: rgba(128, 128, 128, 0.663);
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 14px;
+    padding-top: 20px;
+     padding-bottom: 14px; 
     padding-left: 4%;
     padding-right: 4%;
     width: 100%;
@@ -45,18 +45,14 @@ font-size: 30px;
 font-weight: bold;
 color: white;
 }
-.hamburger{
-    display: none;
-    cursor: pointer;
-}
-.bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background: white;
+.nav-links #icon{
+color: white;
+font-size: 30px;
+line-height: 80px;
+float:right;
+cursor: pointer;
+display: none;
+margin-right: 40px;
 }
 
 .container {
@@ -376,38 +372,55 @@ footer .end .div p{
     .have a:hover{
         color: rgba(191, 146, 91);
     }
-   
-    @media(max-width:1000px){
-        .hamburger{
-            display: block;
-        }
-        .hamburger .active .bar:nth-child(2){
-            opacity: 0;
-        }
-    .hamburger .active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
+    @media(max-width:1048px){
+.barber{
+    font-size: 32px;
+    padding-left: 60px;
+}
+.nav-links ul{
+    margin-right: 20px;
+}
+.nav-links a{
+    font-size: 17px;
+}
+
     }
-    .hamburger .active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-links ul{
-         position: fixed; 
-        left: -100;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: #262626;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-    .nav-links li{
-        margin: 16px 0px;
-    }
-    .nav-links li .active{
-        left: 0px;
-    }
+
+
+    @media(max-width:909px){
+       .nav-links #icon{
+display: block;
+       }
+.nav-links ul{
+    position: fixed;
+    width: 100%;
+    height: 70vh;
+    background: rgba(128, 128, 128, 0.663);
+    top: 100px;
+    left: -100%;
+    transition: all .5s;
+ text-align: center;
+}
+.nav-links li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+.nav-links a {
+    font-size: 20px;
+}
+a:hover{
+    border:none;
+}
+.nav-links ul.show{
+    left: 0px;
+}
     .container{
-        width: 100%;
+        width: 80%;
+    }
+    section .card{
+        flex-direction: column;
+        justify-content: center;
+
     }
     }
