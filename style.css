@@ -20,12 +20,14 @@ header {
     font-weight: bold;
     display: inline-block;
 }
+
 .nav-links .a-menu {
     color: rgba(191 146 91);
 }
+
 .drop-menu {
     display: flex;
-float: right;    
+    float: right;
 }
 
 .nav-links li {
