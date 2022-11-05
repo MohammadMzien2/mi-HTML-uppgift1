@@ -22,9 +22,7 @@
       <div class="nav-links">
         <nav>
           <div class="navbar">
-          <h2 class="barber">BARBERSHOP</h2>
-          <button id="menu-button" class="menu-button">Menu</button>
-          <div class="menu"></div>
+            <h2 class="barber">BARBERSHOP</h2>
             <ul class="drop-menu">
               <li><a href="#" class="a-menu">HOME</a></li>
               <li><a href="#">ABOUT</a></li>
@@ -36,7 +34,6 @@
             </ul>
           </div>
         </nav>
-      </div>
       </div>
     </header>
     <img src="img/nathon.jpg" alt="nathon" class="nathon">
@@ -115,20 +112,19 @@
         <h4>TESTIOMNIAL</h4>
         <p class="pra">PEOPLE SAY<br> ABOUT OUR BARBER</p>
       </div>
-      <div class="slideshow"></div>
       <div class="row">
         <div class="title">
 
           <div class="class"><i class="fas fa-quote-left"></i>
             <p>For far away, behind the word mountains, far from the<br> countries Vokalia and Consonantia, there live
               the blind texts.</p>
-            <ul>
+          <div class="star">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-            </ul>
+          </div>
             <img src="img/style.jpg" alt="style" class="style">
 
             <h3>Roger Scott</h3>
@@ -140,13 +136,13 @@
           <div class="class"><i class="fas fa-quote-left"></i>
             <p>For far away, behind the word mountains, far from the<br> countries Vokalia and Consonantia, there live
               the blind texts.</p>
-            <ul>
+              <div class="star">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-            </ul>
+              </div>
             <img src="img/pavel.jpg" alt="style" class="style">
 
             <h3>Roger Scott</h3>
@@ -158,29 +154,19 @@
           <div class="class"><i class="fas fa-quote-left"></i>
             <p>For far away, behind the word mountains, far from the<br> countries Vokalia and Consonantia, there live
               the blind texts.</p>
-            <ul>
+              <div class="star">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-            </ul>
+              </div>
             <img src="img/customer.jpg" alt="style" class="style">
 
             <h3>Roger Scott</h3>
             <h2>CUSTOMER</h2>
           </div>
-        
         </div>
-        <a class="fore" onclick="plusslide(-1)">&#10094;</a>
-        <a class="next" onclick="plusslide(1)">&#10095;</a>
-      </div>
-      <br>
-      <div>
-        <span class="dot" onclick="currentslide(1)"></span>
-        <span class="dot" onclick="currentslide(2)"></span>
-        <span class="dot" onclick="currentslide(3)"></span>
-      </div>
       </div>
     </section>
 
@@ -196,7 +182,6 @@
             <li><a href="#"> <i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
-
 
         <div class="links">
           <h2>EXPLORE</h2>
@@ -237,44 +222,15 @@
         </div>
       </div>
     </footer>
+
+
     <script>
-const menuBtn = document.querySelector('#menu-button');
-menuBtn.addEventListener('click', () =>{
-  menuBtn.classList.toggle('menu-open');
-});
-window.addEventListener('reasize', function(){
-  if(window.innerWidth < 800){
-    let slideIndex = 1;
-    showSlides (slideIndex);
-
-    function plusSlide (n){
-      showSlides(slideIndex += n);
-    }
-
-    function currentslide (n){
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides (n){
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length){slideIndex = 1}
-      if (n < 1){slideIndex = slide.length}
-      for (i = 0; i < slides.length; i++){
-        slides[i].style.display = "block/visible";
-      }
-      for (i = 0; i < dots.length; i++){
-        dots[i].className = dots [i].className.replace ("active","");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += "active"
-    }
-  }
-})
-
+      const menuBtn = document.querySelector('#menu-button');
+      menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('menu-open');
+      });
+      
     </script>
-
   </body>
 
 </html>

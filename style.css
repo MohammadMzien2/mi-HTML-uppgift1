@@ -9,11 +9,11 @@ header {
     background: rgba(128, 128, 128, 0.663);
     position: fixed;
     width: 100%;
-    padding: 20px 4% 14px 4%;
+    padding: 20px 4% 20px 4%;
     z-index: 999;
 }
 
-.nav-links ul a {
+.navbar ul a {
     padding: 0px 20px;
     text-decoration: none;
     color: white;
@@ -21,7 +21,7 @@ header {
     display: inline-block;
 }
 
-.nav-links .a-menu {
+.navbar .a-menu {
     color: rgba(191 146 91);
 }
 
@@ -43,6 +43,7 @@ header {
     font-size: 30px;
     font-weight: bold;
     color: white;
+    margin-bottom: -20px;
 }
 
 .nathon {
@@ -53,7 +54,7 @@ header {
 
 .container {
     position: relative;
-    padding-left: 55vw;
+    padding-left: 50vw;
     margin-top: -80vh;
     font-family: sans-serif;
     font-weight: bold;
@@ -86,10 +87,9 @@ header {
 
 .verticle-line {
     height: 186px;
-    border-left: 3px solid rgba(191, 146, 91);
+    border-right: 4px solid rgba(191, 146, 91);
     position: absolute;
-    left: 18px;
-    margin-left: -5px;
+    right: 48vw;
     margin-top: -5px;
 }
 
@@ -125,8 +125,7 @@ header {
 }
 
 .card2 {
-    background-color:
-        rgb(184, 121, 43);
+    background-color:rgb(184, 121, 43);
     padding: 40px;
     line-height: 29px;
     color: white;
@@ -272,7 +271,7 @@ section .about {
     border-radius: 50%;
 }
 
-.title ul {
+.title .star {
     color: rgba(191, 146, 91);
     padding-left: 110px;
     margin-bottom: -25px;
@@ -416,4 +415,8 @@ footer .end .div p {
 
 .have a:hover {
     color: rgba(191, 146, 91);
+}
+
+@media screen and (min-width : 1000px) {
+    
 }
