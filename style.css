@@ -13,37 +13,61 @@ header {
     z-index: 999;
 }
 
-.navbar ul a {
-    padding: 0px 20px;
+nav a {
     text-decoration: none;
-    color: white;
+}
+
+.navbar {
+    padding: 0px 20px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
     font-weight: bold;
-    display: inline-block;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul a:hover {
+    color: rgb(179, 126, 55);
+    transition: 0.8s;
+
 }
 
 .navbar .a-menu {
     color: rgba(191 146 91);
 }
 
-.drop-menu {
-    display: flex;
-    float: right;
+nav ul li {
+    padding: 5px;
+    margin-left: 10px;
 }
 
-.nav-links li {
-    list-style: none;
-}
 
-.menu a:hover {
-    color: rgba(191 146 91);
-    transition: 0.8s;
-}
+
+
+
 
 .barber {
     font-size: 30px;
     font-weight: bold;
     color: white;
-    margin-bottom: -20px;
+    margin-top: 5px;
 }
 
 .nathon {
@@ -111,6 +135,7 @@ header {
 }
 
 
+
 .card {
     display: flex;
     margin-top: 20vh;
@@ -125,7 +150,7 @@ header {
 }
 
 .card2 {
-    background-color:rgb(184, 121, 43);
+    background-color: rgb(184, 121, 43);
     padding: 40px;
     line-height: 29px;
     color: white;
@@ -417,6 +442,14 @@ footer .end .div p {
     color: rgba(191, 146, 91);
 }
 
-@media screen and (min-width : 1000px) {
-    
+@media screen and (min-width:950px) {
+
+    .nav-links .drop-menu li a:hover {
+        background-color: rgba(183, 134, 73);
+        color: rgb(9, 6, 1);
+    }
+
+    .menu-button {
+        visibility: hidden;
+    }
 }
