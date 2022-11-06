@@ -1,73 +1,62 @@
+@import "desktop.style.css" screen and(min-width :800px);
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
-
 header {
     background: rgba(128, 128, 128, 0.663);
     position: fixed;
     width: 100%;
     padding: 20px 4% 20px 4%;
     z-index: 999;
+    opacity: 1;
 }
 
-nav a {
-    text-decoration: none;
-}
-
-.navbar {
-    padding: 0px 20px;
-    height: 30px;
+nav{
+    height: 35px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 0px 50px 0px 100px;
 }
-
-.navbar {
-    font-weight: bold;
-    font-size: 15px;
+nav .logo{
+    font-size: 33px;
+    color: #fff;
+    font-weight: 900;
+}
+nav ul{
     display: flex;
-    align-items: center;
-}
-
-.navbar a {
-    color: white;
-}
-
-nav ul {
     list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
-
-nav ul a:hover {
-    color: rgb(179, 126, 55);
-    transition: 0.8s;
+nav ul li{
+    margin: 0px 5px;
 
 }
-
-.navbar .a-menu {
-    color: rgba(191 146 91);
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
-
-nav ul li {
-    padding: 5px;
-    margin-left: 10px;
+nav ul li a.active,
+nav ul li a:hover{
+    color: rgb(184, 121, 43);
 }
+nav .menu-btn{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
 
-
-
-
-
-
-.barber {
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    margin-top: 5px;
+}
+#click{
+    display: none;
 }
 
 .nathon {
@@ -75,48 +64,40 @@ nav ul li {
     width: 100%;
     background-size: cover;
 }
-
 .container {
     position: relative;
-    padding-left: 50vw;
+    padding-left: 62vw;
     margin-top: -80vh;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
 }
-
 .container h2 {
     color: rgba(191, 146, 91);
     font-size: 20px;
-    line-height: 60px;
+    line-height: 20px;
 }
-
-.container p {
-    font-size: 50px;
+.container .We {
+    font-size: 41px;
 }
-
 .container span {
     -webkit-text-stroke: 1px white;
     color: transparent;
 }
-
 .container2 {
-    margin: 0px 60px;
+    margin-left: 50px;
 }
-
 .container2 p {
     font-size: 18px;
     line-height: 32px;
 }
-
 .verticle-line {
     height: 186px;
     border-right: 4px solid rgba(191, 146, 91);
     position: absolute;
-    right: 48vw;
+    right: 36vw;
     margin-top: -5px;
 }
-
 .container2 a {
     color: rgba(191, 146, 91);
     font-size: 20px;
@@ -124,31 +105,25 @@ nav ul li {
     cursor: pointer;
     text-decoration: none;
     border: 2px solid;
-    display: inline-block;
+    display:inline-flex;
     padding: 4px 10px;
-    margin: 14px 0px;
 }
-
 .container2 a:hover {
     background-color: rgba(191, 146, 91);
     color: white;
 }
 
-
-
 .card {
     display: flex;
-    margin-top: 20vh;
+    margin-top: 30vh;
 }
-
 .card1 {
-    background-color: rgba(1191, 146, 9);
+    background-color: rgba(191, 146, 9);
     padding: 40px;
     line-height: 29px;
     color: white;
     position: relative;
 }
-
 .card2 {
     background-color: rgb(184, 121, 43);
     padding: 40px;
@@ -156,20 +131,17 @@ nav ul li {
     color: white;
     position: relative;
 }
-
 .card h3 {
     font-size: 26px;
     margin-top: 50px;
     margin-bottom: 20px;
     text-align: center;
 }
-
 .card p {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
-
 .card img {
     width: 160px;
     height: 160px;
@@ -183,24 +155,20 @@ section .about {
     width: 100%;
     padding: 0px 0px 10px;
 }
-
 .main img {
     width: 40%;
 }
-
 .main {
     margin: 0px auto;
     display: flex;
 }
-
 .about h1 {
     color: rgb(184, 121, 43);
     font-size: 1.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
-
 .about h2 {
     font-size: 3.2rem;
     font-weight: bold;
@@ -208,7 +176,6 @@ section .about {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 1rem;
 }
-
 .about .for p {
     font-size: 20px;
     font-weight: bold;
@@ -216,7 +183,6 @@ section .about {
     line-height: 29px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .about .right {
     background-color: rgb(179, 126, 55);
     width: 60%;
@@ -225,18 +191,15 @@ section .about {
     margin-top: 2rem;
     color: white;
 }
-
 .right p {
     font-weight: bold;
     font-size: 15px;
     margin-left: 101px;
 }
-
 .about-text {
     display: block;
-    padding: 30px;
+    padding: 20px;
 }
-
 .about h3 {
     margin-top: -80px;
     width: 70%;
@@ -244,7 +207,6 @@ section .about {
     font-size: 35px;
     margin-left: 101px;
 }
-
 .right img {
     width: 80px;
     height: auto;
@@ -256,11 +218,9 @@ section .about {
     width: 100%;
     padding: 100px 0px;
 }
-
 .box {
     text-align: center;
 }
-
 .box h4 {
     color: rgba(191, 146, 91);
     font-size: 1.5rem;
@@ -268,19 +228,16 @@ section .about {
     margin: 50px auto 20px 0px;
     text-align: center;
 }
-
 .box .pra {
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
-
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
 }
-
 .title {
     width: 335px;
     padding: 20px 27px;
@@ -289,39 +246,33 @@ section .about {
     margin: 20px;
     position: relative;
 }
-
 .title img {
     width: 100px;
     height: 90px;
     border-radius: 50%;
 }
-
 .title .star {
     color: rgba(191, 146, 91);
     padding-left: 110px;
     margin-bottom: -25px;
 }
-
 .title p {
     padding: 20px;
     font-size: 1.5rem;
     margin-top: -10px;
     color: rgba(0, 0, 0, 0.616);
 }
-
 .title h3 {
     font-size: 22px;
     margin-top: -60px;
     margin-left: 7rem;
 }
-
 .title h2 {
     color: rgba(191, 146, 91);
     margin-top: 10px;
     margin-left: 7rem;
     font-size: 16px;
 }
-
 .title .fas {
     display: flex;
     width: 50px;
@@ -344,14 +295,12 @@ footer {
     height: auto;
     background: rgb(20, 27, 37);
 }
-
 footer .end {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px;
     margin: 0 55px;
 }
-
 footer .end h2 {
     position: relative;
     color: #fff;
@@ -359,7 +308,6 @@ footer .end h2 {
     margin-bottom: 30px;
     margin-top: 45px;
 }
-
 footer .end h2::before {
     content: '';
     position: absolute;
@@ -368,22 +316,18 @@ footer .end h2::before {
     width: 50px;
     height: 2px;
 }
-
 footer .end .div p {
     color: rgba(255, 255, 255, 0.227);
 }
-
 .sci {
     margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(4, 50px);
     grid-gap: 14px;
 }
-
 .sci li {
     list-style: none;
 }
-
 .sci li a {
     display: inline-block;
     width: 46px;
@@ -394,62 +338,141 @@ footer .end .div p {
     border-radius: 50px;
     background-color: rgba(191, 146, 91);
 }
-
 .links li {
     list-style: none;
     padding-bottom: 15px;
 }
-
 .links li a {
     color: white;
     text-decoration: none;
     display: inline-block;
 }
-
 .fas {
     padding-right: 10px;
 }
-
 .links li a:hover {
     color: rgba(191, 146, 91);
 }
-
 .have {
     position: relative;
 }
-
 .have li {
     display: grid;
     grid-template-columns: 40px 1fr;
     margin-bottom: 16px;
 }
-
 .have li span:nth-child(1) {
     color: rgba(191, 146, 91);
     font-size: 20px;
 }
-
 .have li span {
     color: white;
 }
-
 .have a {
     color: white;
     text-decoration: none;
 }
-
 .have a:hover {
     color: rgba(191, 146, 91);
 }
 
-@media screen and (min-width:950px) {
 
-    .nav-links .drop-menu li a:hover {
-        background-color: rgba(183, 134, 73);
-        color: rgb(9, 6, 1);
+@media screen and (max-width:800px){
+    .container{
+        margin-left: -58vw;
+        margin-bottom: 30vh;
+        }
+        .container .We{
+            font-size: 35px;
+        }
+        .container2 p{
+            font-size: 16.6px;
+        }
+        .verticle-line{
+            margin-right: 39vh;
+        }
+    
+}
+@media screen and (max-width: 800px) {
+    nav .menu-btn {
+        display: block;
+    }
+    #click:checked .menu-btn i::before{
+content: "\f00d";
+    }
+    nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease ;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+}
+
+@media screen and (max-width:800px){
+    .card{
+        display: grid;
+        margin-top: 19px;
+    }
+    .card img{
+        left: 32vw;
+        margin-top: 40px;
+    }
+    .card1{
+        position: relative;
+        padding: 65px;
+    }
+    .card2{
+        position: relative;
+        padding: 65px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .main img{
+        width: 80%;
+        height: 80%;
+    }
+    .about-text{
+        min-height: 100vh;
+    }
+    .about-text h2{
+        font-size: 40px;
+    }
+    .about-text{
+        width: 100%;
+        margin-left: -81%;
+        margin-top: 120%;
+        font-size: 24px;
+    }
+    .right img{
+        width: 30%;
+    }
+    }
+@media screen and (max-width: 800px){
+     .services{
+        display: grid;
     }
 
-    .menu-button {
-        visibility: hidden;
+    
+}
+@media screen and (max-width: 800px){
+    footer .end{
+        display: grid;
+        grid-template-columns: 1fr ;
     }
 }
