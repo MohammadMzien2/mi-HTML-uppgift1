@@ -74,7 +74,7 @@ nav .menu-btn {
 
 .container {
     position: relative;
-    padding-left: 62vw;
+    padding-left: 58vw;
     margin-top: -80vh;
     font-family: sans-serif;
     font-weight: bold;
@@ -109,7 +109,7 @@ nav .menu-btn {
     height: 157px;
     border-right: 6px solid rgba(191, 146, 91);
     position: absolute;
-    right: 36vw;
+    right: 40vw;
     margin-top: -5px;
 }
 
@@ -489,7 +489,7 @@ footer .end .div p {
     }
 
     .verticle-line {
-        margin-right: 40vh;
+        margin-right: 38vh;
     }
 
 }
